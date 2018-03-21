@@ -1,7 +1,7 @@
 use_frameworks!
 
 target 'ios-module-architecture_Example' do
-  pod 'ios-module-architecture', :path => '../'
+  pod 'ModuleArchitecture', :path => '../'
 
   target 'ios-module-architecture_Tests' do
     inherit! :search_paths
