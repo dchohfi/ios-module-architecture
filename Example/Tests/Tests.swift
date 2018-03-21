@@ -2,7 +2,7 @@
 
 import Quick
 import Nimble
-import ios-module-architecture
+import ModuleArchitecture
 
 class TableOfContentsSpec: QuickSpec {
     override func spec() {
