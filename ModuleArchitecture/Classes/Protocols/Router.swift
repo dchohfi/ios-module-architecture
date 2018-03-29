@@ -1,5 +1,5 @@
 public protocol Router: class {
-    var children: [Router] { get }
+    var currentChield: Router? { get }
     func start()
     func stop()
 }

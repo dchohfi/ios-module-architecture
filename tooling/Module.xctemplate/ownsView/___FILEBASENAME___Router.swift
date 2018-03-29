@@ -3,7 +3,8 @@ import ModuleArchitecture
 final class ___VARIABLE_productName___Router: ___VARIABLE_productName___RouterType {
     private let presenter: ___VARIABLE_productName___PresenterType
     let viewController: ___VARIABLE_productName___ViewControllerType
-    private(set) var children: [Router] = []
+    
+    private(set) var currentChield: Router?
     
     init(presenter: ___VARIABLE_productName___PresenterType, viewController: ___VARIABLE_productName___ViewControllerType) {
         self.presenter = presenter
