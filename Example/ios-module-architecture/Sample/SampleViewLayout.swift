@@ -2,6 +2,7 @@ import UIKit
 import ModuleArchitecture
 
 final class SampleViewLayout: UIView {
+    
     init() {
         super.init(frame: .zero)
         self.customizeInterface()
@@ -9,12 +10,13 @@ final class SampleViewLayout: UIView {
     
     required init?(coder aDecoder: NSCoder) { fatalError("Not implemented") }
     
-    func show(viewModel: SampleViewModel) {
+    func render(viewState: SampleViewState) {
         
     }
 }
 
 extension SampleViewLayout {
+    
     private func customizeInterface() {
         self.addSubviews()
         self.addConstraints()

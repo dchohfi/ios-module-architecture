@@ -1,4 +1,4 @@
-public protocol View: class {
-    associatedtype ViewModelType: ViewModel
-    func show(viewModel: ViewModelType)
+public protocol View: AnyObject {
+    associatedtype ViewStateType: ViewState
+    func render(viewState: ViewStateType)
 }

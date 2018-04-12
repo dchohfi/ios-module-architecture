@@ -1,7 +1,8 @@
 import ModuleArchitecture
 
 final class SampleModule: SampleModuleType {
-    func build() -> SampleRouterType {
+    
+    func createRouter() -> SampleRouterType {
         let presenter = SamplePresenter<SampleViewController>()
         let viewController = SampleViewController()
         let router = SampleRouter(presenter: presenter, viewController: viewController)

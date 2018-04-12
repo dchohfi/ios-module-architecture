@@ -1,10 +1,11 @@
 import ModuleArchitecture
 
 final class ___VARIABLE_productName___Router: ___VARIABLE_productName___RouterType {
+    
     private let presenter: ___VARIABLE_productName___PresenterType
     let viewController: ___VARIABLE_productName___ViewControllerType
     
-    private(set) var currentChield: Router?
+    private(set) var currentChild: Router?
     
     init(presenter: ___VARIABLE_productName___PresenterType, viewController: ___VARIABLE_productName___ViewControllerType) {
         self.presenter = presenter
@@ -13,9 +14,5 @@ final class ___VARIABLE_productName___Router: ___VARIABLE_productName___RouterTy
     
     func start() {
         self.presenter.start()
-    }
-    
-    func stop() {
-        self.presenter.stop()
     }
 }

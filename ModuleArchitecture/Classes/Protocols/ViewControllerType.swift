@@ -1,6 +1,6 @@
 import UIKit
 
-public protocol ViewControllerType: class {
+public protocol ViewControllerType: AnyObject {
     func asViewController() -> UIViewController
 }
 

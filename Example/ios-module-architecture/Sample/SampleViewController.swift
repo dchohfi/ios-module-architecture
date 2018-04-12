@@ -1,11 +1,12 @@
 import UIKit
 import ModuleArchitecture
 
-protocol SampleViewControllerDelegate: class {
+protocol SampleViewControllerDelegate: AnyObject {
     
 }
 
-final class SampleViewController: UIViewController, SampleView, SampleViewControllerType {
+final class SampleViewController: UIViewController, SampleViewControllerType {
+    
     weak var delegate: SampleViewControllerDelegate?
     private let layout = SampleViewLayout()
     
@@ -15,16 +16,12 @@ final class SampleViewController: UIViewController, SampleView, SampleViewContro
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.customizeInterface()
-    }
-    
-    func show(viewModel: SampleViewModel) {
-        self.layout.show(viewModel: viewModel)
     }
 }
 
-extension SampleViewController {
-    private func customizeInterface() {
+extension SampleViewController: SampleView {
     
+    func render(viewState: SampleViewState) {
+        self.layout.render(viewState: viewState)
     }
 }

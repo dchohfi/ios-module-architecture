@@ -1,9 +1,10 @@
 import ModuleArchitecture
 
 final class ViewLessModule_Router: ViewLessModule_RouterType {
+    
     private let presenter: ViewLessModule_PresenterType
     
-    private(set) var currentChield: Router?
+    private(set) var currentChild: Router?
     
     init(presenter: ViewLessModule_PresenterType) {
         self.presenter = presenter
@@ -11,9 +12,5 @@ final class ViewLessModule_Router: ViewLessModule_RouterType {
     
     func start() {
         self.presenter.start()
-    }
-    
-    func stop() {
-        self.presenter.stop()
     }
 }

@@ -1,7 +1,7 @@
 import ModuleArchitecture
 
 protocol SampleModuleType: Module {
-    func build() -> SampleRouterType
+    func createRouter() -> SampleRouterType
 }
 
 protocol SampleRouterType: Router {
@@ -9,13 +9,13 @@ protocol SampleRouterType: Router {
 }
 
 protocol SamplePresenterType: Presenter, SampleViewControllerDelegate {
-    weak var listener: SampleListenter? { get set }
+    var delegate: SamplePresenterDelegate? { get set }
 }
 
 protocol SampleViewControllerType: ViewControllerType {
-    weak var delegate: SampleViewControllerDelegate? { get set }
+    var delegate: SampleViewControllerDelegate? { get set }
 }
 
-protocol SampleView: View where ViewModelType == SampleViewModel {
+protocol SampleView: View where ViewStateType == SampleViewState {
     
 }

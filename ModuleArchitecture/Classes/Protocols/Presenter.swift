@@ -1,4 +1,3 @@
-public protocol Presenter: class {
+public protocol Presenter: AnyObject {
     func start()
-    func stop()
 }
