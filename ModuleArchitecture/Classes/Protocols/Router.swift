@@ -1,5 +1,4 @@
-public protocol Router: class {
-    var currentChield: Router? { get }
+public protocol Router: AnyObject {
+    var currentChild: Router? { get }
     func start()
-    func stop()
 }

@@ -1,7 +1,7 @@
 import ModuleArchitecture
 
 protocol Module_ModuleType: Module {
-    func build() -> Module_RouterType
+    func createRouter() -> Module_RouterType
 }
 
 protocol Module_RouterType: Router {
@@ -9,13 +9,13 @@ protocol Module_RouterType: Router {
 }
 
 protocol Module_PresenterType: Presenter, Module_ViewControllerDelegate {
-    weak var listener: Module_Listenter? { get set }
+    var delegate: Module_PresenterDelegate? { get set }
 }
 
 protocol Module_ViewControllerType: ViewControllerType {
-    weak var delegate: Module_ViewControllerDelegate? { get set }
+    var delegate: Module_ViewControllerDelegate? { get set }
 }
 
-protocol Module_View: View where ViewModelType == Module_ViewModel {
+protocol Module_View: View where ViewStateType == Module_ViewState {
     
 }

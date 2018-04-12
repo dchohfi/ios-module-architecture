@@ -2,6 +2,7 @@ import UIKit
 import ModuleArchitecture
 
 final class ___VARIABLE_productName___ViewLayout: UIView {
+    
     init() {
         super.init(frame: .zero)
         self.customizeInterface()
@@ -9,12 +10,13 @@ final class ___VARIABLE_productName___ViewLayout: UIView {
     
     required init?(coder aDecoder: NSCoder) { fatalError("Not implemented") }
     
-    func show(viewModel: ___VARIABLE_productName___ViewModel) {
+    func render(viewState: ___VARIABLE_productName___ViewState) {
         
     }
 }
 
 extension ___VARIABLE_productName___ViewLayout {
+    
     private func customizeInterface() {
         self.addSubviews()
         self.addConstraints()

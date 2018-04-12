@@ -1,11 +1,12 @@
 import UIKit
 import ModuleArchitecture
 
-protocol Module_ViewControllerDelegate: class {
+protocol Module_ViewControllerDelegate: AnyObject {
     
 }
 
-final class Module_ViewController: UIViewController, Module_View, Module_ViewControllerType {
+final class Module_ViewController: UIViewController, Module_ViewControllerType {
+    
     weak var delegate: Module_ViewControllerDelegate?
     private let layout = Module_ViewLayout()
     
@@ -15,16 +16,12 @@ final class Module_ViewController: UIViewController, Module_View, Module_ViewCon
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.customizeInterface()
-    }
-    
-    func show(viewModel: Module_ViewModel) {
-        self.layout.show(viewModel: viewModel)
     }
 }
 
-extension Module_ViewController {
-    private func customizeInterface() {
+extension Module_ViewController: Module_View {
     
+    func render(viewState: Module_ViewState) {
+        self.layout.render(viewState: viewState)
     }
 }

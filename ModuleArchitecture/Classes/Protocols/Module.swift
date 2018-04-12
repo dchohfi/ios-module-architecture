@@ -1,3 +1,3 @@
-public protocol Module: class {
+public protocol Module: AnyObject {
     
 }
