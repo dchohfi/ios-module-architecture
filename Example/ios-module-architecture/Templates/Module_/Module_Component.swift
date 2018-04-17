@@ -1,7 +1,7 @@
 import UIKit
 import ModuleArchitecture
 
-final class SampleViewLayout: UIView {
+final class Module_Component: UIView, Component {
     
     init() {
         super.init(frame: .zero)
@@ -9,13 +9,23 @@ final class SampleViewLayout: UIView {
     }
     
     required init?(coder aDecoder: NSCoder) { fatalError("Not implemented") }
+}
+
+extension Module_Component {
     
-    func render(viewState: SampleViewState) {
-        
+    enum Configuration {
+        case build(Module_Configuration)
+    }
+    
+    func render(configuration: Configuration) {
+        switch configuration {
+        case .build(let configuration):
+            print(configuration)
+        }
     }
 }
 
-extension SampleViewLayout {
+extension Module_Component {
     
     private func customizeInterface() {
         self.addSubviews()

@@ -1,11 +1,11 @@
 import ModuleArchitecture
 
-final class Module_Router: Module_RouterType {
+final class Module_Coordinator: Module_CoordinatorType {
     
-    private let presenter: Module_PresenterType
     let viewController: Module_ViewControllerType
+    private let presenter: Module_PresenterType
     
-    private(set) var currentChild: Router?
+    private(set) var currentChild: Coordinator?
     
     init(presenter: Module_PresenterType, viewController: Module_ViewControllerType) {
         self.presenter = presenter

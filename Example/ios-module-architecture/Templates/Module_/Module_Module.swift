@@ -2,13 +2,13 @@ import ModuleArchitecture
 
 final class Module_Module: Module_ModuleType {
     
-    func createRouter() -> Module_RouterType {
-        let presenter = Module_Presenter<Module_ViewController>()
+    func createCoordinator() -> Module_CoordinatorType {
+        let presenter = Module_Presenter()
         let viewController = Module_ViewController()
-        let router = Module_Router(presenter: presenter, viewController: viewController)
+        let coordinator = Module_Coordinator(presenter: presenter, viewController: viewController)
         viewController.delegate = presenter
-        presenter.view = viewController
-        presenter.router = router
-        return router
+        presenter.viewController = viewController
+        presenter.coordinator = coordinator
+        return coordinator
     }
 }

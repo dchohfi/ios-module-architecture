@@ -1,17 +1,13 @@
 import UIKit
 import ModuleArchitecture
 
-protocol ___VARIABLE_productName___ViewControllerDelegate: AnyObject {
-    
-}
-
 final class ___VARIABLE_productName___ViewController: UIViewController, ___VARIABLE_productName___ViewControllerType {
     
     weak var delegate: ___VARIABLE_productName___ViewControllerDelegate?
-    private let layout = ___VARIABLE_productName___ViewLayout()
+    private let component = ___VARIABLE_productName___Component()
     
     override func loadView() {
-        self.view = self.layout
+        self.view = self.component
     }
 
     override func viewDidLoad() {
@@ -21,7 +17,9 @@ final class ___VARIABLE_productName___ViewController: UIViewController, ___VARIA
 
 extension ___VARIABLE_productName___ViewController: ___VARIABLE_productName___View {
     
-    func render(viewState: ___VARIABLE_productName___ViewState) {
-        self.layout.render(viewState: viewState)
+    // This is the entry point for communication between view controllers and presenters
+    // You can change the name for something more contextual if needed.
+    func render(configuration: ___VARIABLE_productName___Configuration) {
+        self.component.render(configuration: .build(configuration))
     }
 }

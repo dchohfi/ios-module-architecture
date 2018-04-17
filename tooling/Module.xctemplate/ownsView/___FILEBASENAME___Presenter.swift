@@ -1,14 +1,9 @@
 import ModuleArchitecture
 
-protocol ___VARIABLE_productName___PresenterDelegate: AnyObject {
+final class ___VARIABLE_productName___Presenter: ___VARIABLE_productName___PresenterType {
     
-}
-
-final class ___VARIABLE_productName___Presenter<View: ___VARIABLE_productName___View>: ___VARIABLE_productName___PresenterType {
-    
-    weak var delegate: ___VARIABLE_productName___PresenterDelegate?
-    weak var view: View?
-    weak var router: ___VARIABLE_productName___RouterType?
+    weak var viewController: ___VARIABLE_productName___View?
+    weak var coordinator: ___VARIABLE_productName___CoordinatorType?
     
     func start() {
         

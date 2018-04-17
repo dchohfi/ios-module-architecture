@@ -2,10 +2,10 @@ import ModuleArchitecture
 
 final class ___VARIABLE_productName___Module: ___VARIABLE_productName___ModuleType {
     
-    func createRouter() -> ___VARIABLE_productName___RouterType {
+    func createCoordinator() -> ___VARIABLE_productName___CoordinatorType {
         let presenter = ___VARIABLE_productName___Presenter()
-        let router = ___VARIABLE_productName___Router(presenter: presenter)
-        presenter.router = router
-        return router
+        let coordinator = ___VARIABLE_productName___Coordinator(presenter: presenter)
+        presenter.coordinator = coordinator
+        return coordinator
     }
 }

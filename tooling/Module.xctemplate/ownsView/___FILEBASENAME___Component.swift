@@ -1,7 +1,7 @@
 import UIKit
 import ModuleArchitecture
 
-final class ___VARIABLE_productName___ViewLayout: UIView {
+final class ___VARIABLE_productName___Component: UIView, Component {
     
     init() {
         super.init(frame: .zero)
@@ -9,13 +9,23 @@ final class ___VARIABLE_productName___ViewLayout: UIView {
     }
     
     required init?(coder aDecoder: NSCoder) { fatalError("Not implemented") }
+}
+
+extension ___VARIABLE_productName___Component {
     
-    func render(viewState: ___VARIABLE_productName___ViewState) {
-        
+    enum Configuration {
+        case build(___VARIABLE_productName___Configuration)
+    }
+    
+    func render(configuration: Configuration) {
+        switch configuration {
+        case .build(let configuration):
+            print(configuration)
+        }
     }
 }
 
-extension ___VARIABLE_productName___ViewLayout {
+extension ___VARIABLE_productName___Component {
     
     private func customizeInterface() {
         self.addSubviews()

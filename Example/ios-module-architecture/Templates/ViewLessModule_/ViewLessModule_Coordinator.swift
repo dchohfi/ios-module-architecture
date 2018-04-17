@@ -1,10 +1,10 @@
 import ModuleArchitecture
 
-final class ViewLessModule_Router: ViewLessModule_RouterType {
+final class ViewLessModule_Coordinator: ViewLessModule_CoordinatorType {
     
     private let presenter: ViewLessModule_PresenterType
     
-    private(set) var currentChild: Router?
+    private(set) var currentChild: Coordinator?
     
     init(presenter: ViewLessModule_PresenterType) {
         self.presenter = presenter

@@ -2,10 +2,10 @@ import ModuleArchitecture
 
 final class ViewLessModule_Module: ViewLessModule_ModuleType {
     
-    func createRouter() -> ViewLessModule_RouterType {
+    func createCoordinator() -> ViewLessModule_CoordinatorType {
         let presenter = ViewLessModule_Presenter()
-        let router = ViewLessModule_Router(presenter: presenter)
-        presenter.router = router
-        return router
+        let coordinator = ViewLessModule_Coordinator(presenter: presenter)
+        presenter.coordinator = coordinator
+        return coordinator
     }
 }

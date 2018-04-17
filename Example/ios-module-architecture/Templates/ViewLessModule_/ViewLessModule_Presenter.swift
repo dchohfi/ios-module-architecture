@@ -6,8 +6,7 @@ protocol ViewLessModule_PresenterDelegate: AnyObject {
 
 final class ViewLessModule_Presenter: ViewLessModule_PresenterType {
     
-    weak var delegate: ViewLessModule_PresenterDelegate?
-    weak var router: ViewLessModule_RouterType?
+    weak var coordinator: ViewLessModule_CoordinatorType?
     
     func start() {
         

@@ -1,17 +1,13 @@
 import UIKit
 import ModuleArchitecture
 
-protocol Module_ViewControllerDelegate: AnyObject {
-    
-}
-
 final class Module_ViewController: UIViewController, Module_ViewControllerType {
     
     weak var delegate: Module_ViewControllerDelegate?
-    private let layout = Module_ViewLayout()
+    private let component = Module_Component()
     
     override func loadView() {
-        self.view = self.layout
+        self.view = self.component
     }
 
     override func viewDidLoad() {
@@ -21,7 +17,9 @@ final class Module_ViewController: UIViewController, Module_ViewControllerType {
 
 extension Module_ViewController: Module_View {
     
-    func render(viewState: Module_ViewState) {
-        self.layout.render(viewState: viewState)
+    // This is the entry point for communication between view controllers and presenters
+    // You can change the name for something more contextual if needed.
+    func render(configuration: Module_Configuration) {
+        self.component.render(configuration: .build(configuration))
     }
 }
