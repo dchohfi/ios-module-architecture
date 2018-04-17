@@ -1,5 +1,7 @@
 import ModuleArchitecture
 
+// Builder object that configures the module and returns a coordinator.
+// A module should always be instantiated via the createCoordinator method.
 protocol ___VARIABLE_productName___ModuleType: Module {
     func createCoordinator() -> ___VARIABLE_productName___CoordinatorType
 }
@@ -9,11 +11,7 @@ protocol ___VARIABLE_productName___CoordinatorType: Coordinator {
 }
 
 protocol ___VARIABLE_productName___PresenterType: Presenter, ___VARIABLE_productName___ViewControllerDelegate {
-
-}
-
-protocol ___VARIABLE_productName___ViewControllerDelegate: AnyObject {
-    
+    var delegate: ___VARIABLE_productName___PresenterDelegate? { get set }
 }
 
 protocol ___VARIABLE_productName___ViewControllerType: ViewControllerType {
@@ -21,8 +19,7 @@ protocol ___VARIABLE_productName___ViewControllerType: ViewControllerType {
 }
 
 protocol ___VARIABLE_productName___View: AnyObject {
-    
-    // This is the entry point for communication between view controllers and presenters
+    // This is the communication point from presenter to view controller.
     // You can change the name for something more contextual if needed.
     func render(configuration: ___VARIABLE_productName___Configuration)
 }

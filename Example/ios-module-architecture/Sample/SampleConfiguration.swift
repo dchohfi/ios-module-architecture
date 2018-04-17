@@ -1,0 +1,5 @@
+import ModuleArchitecture
+
+struct SampleConfiguration {
+    
+}

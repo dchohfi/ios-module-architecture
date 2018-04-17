@@ -1,9 +1,13 @@
 import ModuleArchitecture
 
+protocol Module_PresenterDelegate: AnyObject {
+    
+}
+
 final class Module_Presenter: Module_PresenterType {
     
     weak var viewController: Module_View?
-    weak var coordinator: Module_CoordinatorType?
+    weak var delegate: Module_PresenterDelegate?
     
     func start() {
         

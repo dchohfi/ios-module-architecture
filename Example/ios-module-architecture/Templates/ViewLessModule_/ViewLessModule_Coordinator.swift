@@ -14,3 +14,7 @@ final class ViewLessModule_Coordinator: ViewLessModule_CoordinatorType {
         self.presenter.start()
     }
 }
+
+extension ViewLessModule_Coordinator: ViewLessModule_PresenterDelegate {
+    
+}

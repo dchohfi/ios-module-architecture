@@ -16,3 +16,7 @@ final class ___VARIABLE_productName___Coordinator: ___VARIABLE_productName___Coo
         self.presenter.start()
     }
 }
+
+extension ___VARIABLE_productName___Coordinator: ___VARIABLE_productName___PresenterDelegate {
+    
+}

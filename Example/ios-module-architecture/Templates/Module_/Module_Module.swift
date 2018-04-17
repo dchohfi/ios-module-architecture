@@ -8,7 +8,7 @@ final class Module_Module: Module_ModuleType {
         let coordinator = Module_Coordinator(presenter: presenter, viewController: viewController)
         viewController.delegate = presenter
         presenter.viewController = viewController
-        presenter.coordinator = coordinator
+        presenter.delegate = coordinator
         return coordinator
     }
 }

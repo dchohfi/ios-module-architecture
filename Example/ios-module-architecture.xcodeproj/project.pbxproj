@@ -25,6 +25,13 @@
 		607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDC1AFB9204008FA782 /* Images.xcassets */; };
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
 		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
+		631F57AF2086569F0029AA11 /* SampleConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 631F57A82086569F0029AA11 /* SampleConfiguration.swift */; };
+		631F57B02086569F0029AA11 /* SampleCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 631F57A92086569F0029AA11 /* SampleCoordinator.swift */; };
+		631F57B12086569F0029AA11 /* SampleModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 631F57AA2086569F0029AA11 /* SampleModule.swift */; };
+		631F57B22086569F0029AA11 /* SamplePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 631F57AB2086569F0029AA11 /* SamplePresenter.swift */; };
+		631F57B32086569F0029AA11 /* SampleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 631F57AC2086569F0029AA11 /* SampleViewController.swift */; };
+		631F57B42086569F0029AA11 /* SampleComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 631F57AD2086569F0029AA11 /* SampleComponent.swift */; };
+		631F57B52086569F0029AA11 /* SampleDefinitions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 631F57AE2086569F0029AA11 /* SampleDefinitions.swift */; };
 		857B90F90B9E22E9E4C6662E /* Pods_ios_module_architecture_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E48C40356DB8E4C9AE9C97A4 /* Pods_ios_module_architecture_Example.framework */; };
 /* End PBXBuildFile section */
 
@@ -63,6 +70,13 @@
 		607FACE51AFB9204008FA782 /* ios-module-architecture_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ios-module-architecture_Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
+		631F57A82086569F0029AA11 /* SampleConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleConfiguration.swift; sourceTree = "<group>"; };
+		631F57A92086569F0029AA11 /* SampleCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleCoordinator.swift; sourceTree = "<group>"; };
+		631F57AA2086569F0029AA11 /* SampleModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleModule.swift; sourceTree = "<group>"; };
+		631F57AB2086569F0029AA11 /* SamplePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SamplePresenter.swift; sourceTree = "<group>"; };
+		631F57AC2086569F0029AA11 /* SampleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleViewController.swift; sourceTree = "<group>"; };
+		631F57AD2086569F0029AA11 /* SampleComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleComponent.swift; sourceTree = "<group>"; };
+		631F57AE2086569F0029AA11 /* SampleDefinitions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleDefinitions.swift; sourceTree = "<group>"; };
 		B5B95B35FD5812AF2CB58C75 /* Pods-ios-module-architecture_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ios-module-architecture_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ios-module-architecture_Tests/Pods-ios-module-architecture_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		D10561CA5D123E0EF8F23BDF /* Pods-ios-module-architecture_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ios-module-architecture_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ios-module-architecture_Tests/Pods-ios-module-architecture_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		D6EA043D90A591C8535C5A25 /* Pods-ios-module-architecture_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ios-module-architecture_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-ios-module-architecture_Example/Pods-ios-module-architecture_Example.release.xcconfig"; sourceTree = "<group>"; };
@@ -101,10 +115,10 @@
 		2056427F2062CF9600ACE96E /* ViewLessModule_ */ = {
 			isa = PBXGroup;
 			children = (
+				205642832062CF9600ACE96E /* ViewLessModule_Module.swift */,
+				205642822062CF9600ACE96E /* ViewLessModule_Coordinator.swift */,
 				205642802062CF9600ACE96E /* ViewLessModule_Presenter.swift */,
 				205642812062CF9600ACE96E /* ViewLessModule_Definitions.swift */,
-				205642822062CF9600ACE96E /* ViewLessModule_Coordinator.swift */,
-				205642832062CF9600ACE96E /* ViewLessModule_Module.swift */,
 			);
 			path = ViewLessModule_;
 			sourceTree = "<group>";
@@ -112,22 +126,15 @@
 		205642842062CF9600ACE96E /* Module_ */ = {
 			isa = PBXGroup;
 			children = (
-				205642852062CF9600ACE96E /* Module_ViewController.swift */,
 				205642862062CF9600ACE96E /* Module_Module.swift */,
 				205642872062CF9600ACE96E /* Module_Coordinator.swift */,
+				2056428A2062CF9600ACE96E /* Module_Presenter.swift */,
+				205642852062CF9600ACE96E /* Module_ViewController.swift */,
+				2056428B2062CF9600ACE96E /* Module_Component.swift */,
 				205642882062CF9600ACE96E /* Module_Configuration.swift */,
 				205642892062CF9600ACE96E /* Module_Definitions.swift */,
-				2056428A2062CF9600ACE96E /* Module_Presenter.swift */,
-				2056428B2062CF9600ACE96E /* Module_Component.swift */,
 			);
 			path = Module_;
-			sourceTree = "<group>";
-		};
-		2082CF69206D334100AF63A8 /* Sample */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Sample;
 			sourceTree = "<group>";
 		};
 		607FACC71AFB9204008FA782 = {
@@ -154,7 +161,7 @@
 		607FACD21AFB9204008FA782 /* Example for ios-module-architecture */ = {
 			isa = PBXGroup;
 			children = (
-				2082CF69206D334100AF63A8 /* Sample */,
+				631F57A7208656970029AA11 /* Sample */,
 				2056427E2062CF9600ACE96E /* Templates */,
 				607FACD51AFB9204008FA782 /* AppDelegate.swift */,
 				607FACD91AFB9204008FA782 /* Main.storyboard */,
@@ -198,6 +205,20 @@
 				4EB38509D25141BAC263B3E8 /* README.md */,
 			);
 			name = "Podspec Metadata";
+			sourceTree = "<group>";
+		};
+		631F57A7208656970029AA11 /* Sample */ = {
+			isa = PBXGroup;
+			children = (
+				631F57A82086569F0029AA11 /* SampleConfiguration.swift */,
+				631F57A92086569F0029AA11 /* SampleCoordinator.swift */,
+				631F57AA2086569F0029AA11 /* SampleModule.swift */,
+				631F57AB2086569F0029AA11 /* SamplePresenter.swift */,
+				631F57AC2086569F0029AA11 /* SampleViewController.swift */,
+				631F57AD2086569F0029AA11 /* SampleComponent.swift */,
+				631F57AE2086569F0029AA11 /* SampleDefinitions.swift */,
+			);
+			path = Sample;
 			sourceTree = "<group>";
 		};
 		C8FC3AAEB0704746DC66FE0D /* Frameworks */ = {
@@ -441,14 +462,21 @@
 				205642912062CF9600ACE96E /* Module_Module.swift in Sources */,
 				2056428C2062CF9600ACE96E /* ViewLessModule_Presenter.swift in Sources */,
 				205642952062CF9600ACE96E /* Module_Presenter.swift in Sources */,
+				631F57B32086569F0029AA11 /* SampleViewController.swift in Sources */,
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
 				2056428E2062CF9600ACE96E /* ViewLessModule_Coordinator.swift in Sources */,
 				205642922062CF9600ACE96E /* Module_Coordinator.swift in Sources */,
 				2056428F2062CF9600ACE96E /* ViewLessModule_Module.swift in Sources */,
+				631F57B02086569F0029AA11 /* SampleCoordinator.swift in Sources */,
 				205642942062CF9600ACE96E /* Module_Definitions.swift in Sources */,
+				631F57B52086569F0029AA11 /* SampleDefinitions.swift in Sources */,
+				631F57B22086569F0029AA11 /* SamplePresenter.swift in Sources */,
 				205642932062CF9600ACE96E /* Module_Configuration.swift in Sources */,
+				631F57B42086569F0029AA11 /* SampleComponent.swift in Sources */,
+				631F57B12086569F0029AA11 /* SampleModule.swift in Sources */,
 				205642902062CF9600ACE96E /* Module_ViewController.swift in Sources */,
 				2056428D2062CF9600ACE96E /* ViewLessModule_Definitions.swift in Sources */,
+				631F57AF2086569F0029AA11 /* SampleConfiguration.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

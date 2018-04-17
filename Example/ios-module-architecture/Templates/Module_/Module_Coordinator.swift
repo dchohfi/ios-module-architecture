@@ -16,3 +16,7 @@ final class Module_Coordinator: Module_CoordinatorType {
         self.presenter.start()
     }
 }
+
+extension Module_Coordinator: Module_PresenterDelegate {
+    
+}

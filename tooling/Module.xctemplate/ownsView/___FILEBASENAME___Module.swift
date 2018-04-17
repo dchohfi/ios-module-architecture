@@ -8,7 +8,7 @@ final class ___VARIABLE_productName___Module: ___VARIABLE_productName___ModuleTy
         let coordinator = ___VARIABLE_productName___Coordinator(presenter: presenter, viewController: viewController)
         viewController.delegate = presenter
         presenter.viewController = viewController
-        presenter.coordinator = coordinator
+        presenter.delegate = coordinator
         return coordinator
     }
 }
