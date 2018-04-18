@@ -1,5 +1,0 @@
-import ModuleArchitecture
-
-struct SampleConfiguration {
-    
-}
