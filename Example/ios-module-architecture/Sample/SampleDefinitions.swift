@@ -26,5 +26,5 @@ protocol SamplePresenterView: AnyObject {
     
     // This is the communication point from presenter to view controller.
     // You can change the name for something more contextual if needed.
-    func render(configuration: SampleConfiguration)
+    //func render(configuration: SampleConfiguration)
 }

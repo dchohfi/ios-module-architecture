@@ -15,14 +15,13 @@ final class SampleComponent: UIView, Component {
 extension SampleComponent {
     
     enum Configuration {
-        case build(SampleConfiguration)
+
     }
     
     func render(configuration: Configuration) {
 
         switch configuration {
-        case .build(let configuration):
-            print(configuration)
+
         }
     }
 }
