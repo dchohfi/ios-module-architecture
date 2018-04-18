@@ -7,10 +7,12 @@ final class ViewLessModule_Coordinator: ViewLessModule_CoordinatorType {
     private(set) var currentChild: Coordinator?
     
     init(presenter: ViewLessModule_PresenterType) {
+
         self.presenter = presenter
     }
     
     func start() {
+        
         self.presenter.start()
     }
 }

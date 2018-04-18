@@ -7,10 +7,12 @@ final class ___VARIABLE_productName___Coordinator: ___VARIABLE_productName___Coo
     private(set) var currentChild: Coordinator?
     
     init(presenter: ___VARIABLE_productName___PresenterType) {
+
         self.presenter = presenter
     }
     
     func start() {
+        
         self.presenter.start()
     }
 }

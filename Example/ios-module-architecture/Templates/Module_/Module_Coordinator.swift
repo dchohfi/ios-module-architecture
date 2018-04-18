@@ -8,11 +8,13 @@ final class Module_Coordinator: Module_CoordinatorType {
     private(set) var currentChild: Coordinator?
     
     init(presenter: Module_PresenterType, viewController: Module_ViewControllerType) {
+        
         self.presenter = presenter
         self.viewController = viewController
     }
     
     func start() {
+        
         self.presenter.start()
     }
 }

@@ -8,11 +8,13 @@ final class SampleCoordinator: SampleCoordinatorType {
     private(set) var currentChild: Coordinator?
     
     init(presenter: SamplePresenterType, viewController: SampleViewControllerType) {
+        
         self.presenter = presenter
         self.viewController = viewController
     }
     
     func start() {
+        
         self.presenter.start()
     }
 }

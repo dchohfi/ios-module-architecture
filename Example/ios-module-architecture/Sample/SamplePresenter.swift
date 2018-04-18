@@ -6,7 +6,7 @@ protocol SamplePresenterDelegate: AnyObject {
 
 final class SamplePresenter: SamplePresenterType {
     
-    weak var viewController: SampleView?
+    weak var viewController: SamplePresenterView?
     weak var delegate: SamplePresenterDelegate?
     
     func start() {

@@ -11,19 +11,22 @@ final class ___VARIABLE_productName___ViewController: UIViewController, ___VARIA
     private let component = ___VARIABLE_productName___Component()
     
     override func loadView() {
+
         self.view = self.component
     }
 
     override func viewDidLoad() {
+
         super.viewDidLoad()
     }
 }
 
-extension ___VARIABLE_productName___ViewController: ___VARIABLE_productName___View {
+extension ___VARIABLE_productName___ViewController: ___VARIABLE_productName___PresenterView {
     
     // This is the communication point from presenter to view controller.
     // You can change the name for something more contextual if needed.
     func render(configuration: ___VARIABLE_productName___Configuration) {
+
         self.component.render(configuration: .build(configuration))
     }
 }

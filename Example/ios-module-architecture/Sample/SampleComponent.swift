@@ -4,6 +4,7 @@ import ModuleArchitecture
 final class SampleComponent: UIView, Component {
     
     init() {
+
         super.init(frame: .zero)
         self.customizeInterface()
     }
@@ -18,6 +19,7 @@ extension SampleComponent {
     }
     
     func render(configuration: Configuration) {
+
         switch configuration {
         case .build(let configuration):
             print(configuration)
@@ -28,6 +30,7 @@ extension SampleComponent {
 extension SampleComponent {
     
     private func customizeInterface() {
+        
         self.addSubviews()
         self.addConstraints()
     }
