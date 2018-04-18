@@ -22,3 +22,5 @@ cp -r tooling/Module.xctemplate ~/Library/Developer/Xcode/Templates/
 - Diego Chohfi (@dchohfi)
 - Vinicius Rodrigues (@viniciusaro)
 - Rodrigo Borges (@rdgborges)
+- Emanuel Cunha (@emans)
+- Lourenço Marinho (@lourenco-marinho)
