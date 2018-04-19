@@ -1,19 +1,25 @@
 {
   "name": "ModuleArchitecture",
-  "version": "0.1.0",
+  "version": "0.7.0",
   "summary": "iOS Architecture",
-  "description": "Protocols that define iOS Architecture",
+  "description": "Protocols that define a module based iOS Architecture",
   "homepage": "https://github.com/dchohfi/ios-module-architecture",
-  "license": "Code is private",
+  "license": {
+    "type": "Private",
+    "text": "Code is private"
+  },
   "authors": {
-    "dchohfi": "dchohfi@gmail.com"
+    "dchohfi": "dchohfi@gmail.com",
+    "viniciusaro": "vinicius.a.ro@gmail.com",
+    "rdgborges": "rborges.soares@gmail.com"
   },
   "source": {
     "git": "https://github.com/dchohfi/ios-module-architecture.git",
-    "tag": "0.1.0"
+    "tag": "0.7.0"
   },
   "platforms": {
     "ios": "8.0"
   },
+  "swift_version": "4.1",
   "source_files": "ModuleArchitecture/Classes/**/*"
 }
