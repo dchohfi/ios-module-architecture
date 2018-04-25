@@ -15,13 +15,14 @@ final class ___VARIABLE_productName___Component: UIView, Component {
 extension ___VARIABLE_productName___Component {
     
     enum Configuration {
-
+        case build(___VARIABLE_productName___Configuration)
     }
     
     func render(configuration: Configuration) {
 
         switch configuration {
-
+        case .build(let configuration):
+            print(configuration)
         }
     }
 }

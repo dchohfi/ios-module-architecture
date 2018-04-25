@@ -1,6 +1,6 @@
 import ModuleArchitecture
 
-final class SampleModule: SampleModuleType {
+final class SampleModule: Module, SampleModuleType {
     
     func createCoordinator() -> SampleCoordinatorType {
         

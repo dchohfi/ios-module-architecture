@@ -4,13 +4,13 @@ protocol Module_PresenterDelegate: AnyObject {
     
 }
 
-final class Module_Presenter: Module_PresenterType {
+final class Module_Presenter: Presenter, Module_PresenterType {
     
     weak var viewController: Module_PresenterView?
     weak var delegate: Module_PresenterDelegate?
-    
-    func start() {
-        
+
+    override func start() {
+        //
     }
 }
 
