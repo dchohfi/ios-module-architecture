@@ -5,7 +5,7 @@ public protocol CoordinatorType: AnyObject {
     func detach(_ child: CoordinatorType)
 }
 
-protocol ReusableCoordinatorType: CoordinatorType {
+public protocol ReusableCoordinatorType: CoordinatorType {
 
     func prepareForReuse()
 }
