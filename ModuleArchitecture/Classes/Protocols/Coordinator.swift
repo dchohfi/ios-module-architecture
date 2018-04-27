@@ -5,6 +5,11 @@ public protocol CoordinatorType: AnyObject {
     func detach(_ child: CoordinatorType)
 }
 
+protocol ReusableCoordinatorType: CoordinatorType {
+
+    func prepareForReuse()
+}
+
 open class Coordinator<Presentable>: CoordinatorType {
 
     private var children: [CoordinatorType] = []
