@@ -1,21 +1,13 @@
 import ModuleArchitecture
 
-final class Module_Coordinator: Module_CoordinatorType {
+final class Module_Coordinator: Coordinator<Module_PresenterType>, Module_CoordinatorType {
     
     let viewController: Module_ViewControllerType
-    private let presenter: Module_PresenterType
-    
-    private(set) var currentChild: Coordinator?
-    
+
     init(presenter: Module_PresenterType, viewController: Module_ViewControllerType) {
-        
-        self.presenter = presenter
+
         self.viewController = viewController
-    }
-    
-    func start() {
-        
-        self.presenter.start()
+        super.init(presenter: presenter)
     }
 }
 

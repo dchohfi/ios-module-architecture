@@ -1,20 +1,7 @@
 import ModuleArchitecture
 
-final class ViewLessModule_Coordinator: ViewLessModule_CoordinatorType {
-    
-    private let presenter: ViewLessModule_PresenterType
-    
-    private(set) var currentChild: Coordinator?
-    
-    init(presenter: ViewLessModule_PresenterType) {
+final class ViewLessModule_Coordinator: Coordinator<ViewLessModule_PresenterType>, ViewLessModule_CoordinatorType {
 
-        self.presenter = presenter
-    }
-    
-    func start() {
-        
-        self.presenter.start()
-    }
 }
 
 extension ViewLessModule_Coordinator: ViewLessModule_PresenterDelegate {

@@ -1,6 +1,6 @@
 import ModuleArchitecture
 
-final class ViewLessModule_Module: ViewLessModule_ModuleType {
+final class ViewLessModule_Module: Module, ViewLessModule_ModuleType {
     
     func createCoordinator() -> ViewLessModule_CoordinatorType {
         
