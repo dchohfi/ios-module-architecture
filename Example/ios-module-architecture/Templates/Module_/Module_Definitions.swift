@@ -2,17 +2,17 @@ import ModuleArchitecture
 
 // Builder object that configures the module and returns a coordinator.
 // A module should always be instantiated via the createCoordinator method.
-protocol Module_ModuleType: Module {
+protocol Module_ModuleType: ModuleType {
 
     func createCoordinator() -> Module_CoordinatorType
 }
 
-protocol Module_CoordinatorType: Coordinator {
+protocol Module_CoordinatorType: CoordinatorType {
 
     var viewController: Module_ViewControllerType { get }
 }
 
-protocol Module_PresenterType: Presenter, Module_ViewControllerDelegate {
+protocol Module_PresenterType: PresenterType, Module_ViewControllerDelegate {
 
     var delegate: Module_PresenterDelegate? { get set }
 }

@@ -4,13 +4,13 @@ protocol SamplePresenterDelegate: AnyObject {
     
 }
 
-final class SamplePresenter: SamplePresenterType {
+final class SamplePresenter: Presenter, SamplePresenterType {
     
     weak var viewController: SamplePresenterView?
     weak var delegate: SamplePresenterDelegate?
-    
-    func start() {
-        
+
+    override func start() {
+        //
     }
 }
 

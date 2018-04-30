@@ -4,11 +4,11 @@ protocol ViewLessModule_PresenterDelegate: AnyObject {
     
 }
 
-final class ViewLessModule_Presenter: ViewLessModule_PresenterType {
+final class ViewLessModule_Presenter: Presenter, ViewLessModule_PresenterType {
     
     weak var delegate: ViewLessModule_PresenterDelegate?
-    
-    func start() {
-        
+
+    override func start() {
+        //
     }
 }

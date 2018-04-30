@@ -1,6 +1,6 @@
 import ModuleArchitecture
 
-final class Module_Module: Module_ModuleType {
+final class Module_Module: Module, Module_ModuleType {
     
     func createCoordinator() -> Module_CoordinatorType {
         

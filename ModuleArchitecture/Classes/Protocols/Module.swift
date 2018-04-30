@@ -1,3 +1,11 @@
-public protocol Module: AnyObject {
+public protocol ModuleType: AnyObject {
     
+}
+
+open class Module: ModuleType {
+
+    public init() {
+
+        //
+    }
 }

@@ -1,6 +1,6 @@
 import ModuleArchitecture
 
-final class ___VARIABLE_productName___Module: ___VARIABLE_productName___ModuleType {
+final class ___VARIABLE_productName___Module: Module, ___VARIABLE_productName___ModuleType {
     
     func createCoordinator() -> ___VARIABLE_productName___CoordinatorType {
         
