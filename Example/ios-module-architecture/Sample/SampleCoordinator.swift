@@ -1,7 +1,7 @@
 import ModuleArchitecture
 
 final class SampleCoordinator: Coordinator<SamplePresenterType>, SampleCoordinatorType {
-    
+
     let viewController: SampleViewControllerType
 
     init(presenter: SamplePresenterType, viewController: SampleViewControllerType) {
@@ -12,5 +12,5 @@ final class SampleCoordinator: Coordinator<SamplePresenterType>, SampleCoordinat
 }
 
 extension SampleCoordinator: SamplePresenterDelegate {
-    
+
 }
