@@ -30,15 +30,15 @@ extension ___VARIABLE_productName___Component {
     
     private func customizeInterface() {
         
-        self.addSubviews()
-        self.addConstraints()
+        self.defineSubviews()
+        self.defineSubviewsConstraints()
     }
     
-    private func addSubviews() {
+    private func defineSubviews() {
         
     }
     
-    private func addConstraints() {
+    private func defineSubviewsConstraints() {
         
     }
 }
