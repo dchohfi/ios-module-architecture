@@ -26,5 +26,5 @@ protocol ___VARIABLE_productName___PresenterView: AnyObject {
 
     // This is the communication point from presenter to view controller.
     // You can change the name for something more contextual if needed.
-    //func render(configuration: ___VARIABLE_productName___Configuration)
+    func render(configuration: ___VARIABLE_productName___Configuration)
 }
