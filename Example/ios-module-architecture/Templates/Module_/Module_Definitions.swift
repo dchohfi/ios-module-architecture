@@ -23,7 +23,7 @@ protocol Module_ViewControllerType: ViewControllerType {
 }
 
 protocol Module_PresenterView: AnyObject {
-    
+
     // This is the communication point from presenter to view controller.
     // You can change the name for something more contextual if needed.
     func render(configuration: Module_Configuration)

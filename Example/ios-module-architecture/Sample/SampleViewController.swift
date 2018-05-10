@@ -2,14 +2,14 @@ import UIKit
 import ModuleArchitecture
 
 protocol SampleViewControllerDelegate: AnyObject {
-    
+
 }
 
 final class SampleViewController: UIViewController, SampleViewControllerType {
-    
+
     weak var delegate: SampleViewControllerDelegate?
     private let component = SampleComponent()
-    
+
     override func loadView() {
 
         self.view = self.component
@@ -22,7 +22,7 @@ final class SampleViewController: UIViewController, SampleViewControllerType {
 }
 
 extension SampleViewController: SamplePresenterView {
-    
+
     // This is the communication point from presenter to view controller.
     // You can change the name for something more contextual if needed.
 //    func render(configuration: SampleConfiguration) {

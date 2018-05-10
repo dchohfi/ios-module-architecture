@@ -1,9 +1,9 @@
 import ModuleArchitecture
 
 final class SampleModule: Module, SampleModuleType {
-    
+
     func createCoordinator() -> SampleCoordinatorType {
-        
+
         let presenter = SamplePresenter()
         let viewController = SampleViewController()
         let coordinator = SampleCoordinator(presenter: presenter, viewController: viewController)

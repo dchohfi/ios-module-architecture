@@ -1,7 +1,7 @@
 import ModuleArchitecture
 
 final class ___VARIABLE_productName___Coordinator: Coordinator<___VARIABLE_productName___PresenterType>, ___VARIABLE_productName___CoordinatorType {
-    
+
     let viewController: ___VARIABLE_productName___ViewControllerType
 
     init(presenter: ___VARIABLE_productName___PresenterType, viewController: ___VARIABLE_productName___ViewControllerType) {
@@ -12,5 +12,5 @@ final class ___VARIABLE_productName___Coordinator: Coordinator<___VARIABLE_produ
 }
 
 extension ___VARIABLE_productName___Coordinator: ___VARIABLE_productName___PresenterDelegate {
-    
+
 }
