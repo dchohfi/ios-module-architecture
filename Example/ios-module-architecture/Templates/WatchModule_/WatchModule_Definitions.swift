@@ -1,5 +1,7 @@
-protocol WatchModule_PresenterType: AnyObject {
-    func start()
+import ModuleArchitecture
+
+protocol WatchModule_PresenterType: PresenterType {
+
 }
 
 protocol WatchModule_View: AnyObject {
