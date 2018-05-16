@@ -1,10 +1,18 @@
 import Foundation
 
-class WatchModule_Presenter: WatchModule_PresenterType {
+protocol WatchModule_PresenterDelegate: AnyObject {
+
+}
+
+final class WatchModule_Presenter: WatchModule_PresenterType {
 
     // MARK: - Dependencies
 
     private weak var view: WatchModule_View?
+
+    // MARK: - Delegate
+
+    weak var delegate: WatchModule_PresenterDelegate?
 
     // MARK: - Init
 

@@ -1,13 +1,16 @@
 import Foundation
 import WatchKit
 
-class ___VARIABLE_productName___InterfaceController: WKInterfaceController {
+final class ___VARIABLE_productName___InterfaceController: WKInterfaceController {
 
     // MARK: - Presenter
 
     private lazy var presenter: ___VARIABLE_productName___PresenterType = {
 
+        // A Factory class could be used to create coordinators and presenters and tight them together
+        let coordinator = ___VARIABLE_productName___Coordinator(presentationContext: self)
         let presenter = ___VARIABLE_productName___Presenter(view: self)
+        presenter.delegate = coordinator
         return presenter
     }()
 

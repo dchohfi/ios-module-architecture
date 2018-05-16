@@ -33,6 +33,7 @@
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
 		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
 		857B90F90B9E22E9E4C6662E /* Pods_ios_module_architecture_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E48C40356DB8E4C9AE9C97A4 /* Pods_ios_module_architecture_Example.framework */; };
+		98C2B77320ACA5D100EF509A /* WatchModule_Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98C2B77220ACA5D100EF509A /* WatchModule_Coordinator.swift */; };
 		98FAB56D20AB5AFE0042386E /* WatchModule_InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98FAB56C20AB5AFE0042386E /* WatchModule_InterfaceController.swift */; };
 		98FAB56F20AB5B380042386E /* WatchModule_Presenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98FAB56E20AB5B380042386E /* WatchModule_Presenter.swift */; };
 		98FAB57120AB5B550042386E /* WatchModule_Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98FAB57020AB5B550042386E /* WatchModule_Configuration.swift */; };
@@ -81,6 +82,7 @@
 		607FACE51AFB9204008FA782 /* ios-module-architecture_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ios-module-architecture_Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
+		98C2B77220ACA5D100EF509A /* WatchModule_Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchModule_Coordinator.swift; sourceTree = "<group>"; };
 		98FAB56C20AB5AFE0042386E /* WatchModule_InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchModule_InterfaceController.swift; sourceTree = "<group>"; };
 		98FAB56E20AB5B380042386E /* WatchModule_Presenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchModule_Presenter.swift; sourceTree = "<group>"; };
 		98FAB57020AB5B550042386E /* WatchModule_Configuration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchModule_Configuration.swift; sourceTree = "<group>"; };
@@ -236,6 +238,7 @@
 				98FAB56C20AB5AFE0042386E /* WatchModule_InterfaceController.swift */,
 				98FAB56E20AB5B380042386E /* WatchModule_Presenter.swift */,
 				98FAB57020AB5B550042386E /* WatchModule_Configuration.swift */,
+				98C2B77220ACA5D100EF509A /* WatchModule_Coordinator.swift */,
 				98FAB57220AB5B650042386E /* WatchModule_Definitions.swift */,
 			);
 			path = WatchModule_;
@@ -494,6 +497,7 @@
 				98FAB57120AB5B550042386E /* WatchModule_Configuration.swift in Sources */,
 				205642942062CF9600ACE96E /* Module_Definitions.swift in Sources */,
 				47BB647D20A4AD0D00242C1D /* SampleDefinitions.swift in Sources */,
+				98C2B77320ACA5D100EF509A /* WatchModule_Coordinator.swift in Sources */,
 				47BB647A20A4AD0D00242C1D /* SamplePresenter.swift in Sources */,
 				205642932062CF9600ACE96E /* Module_Configuration.swift in Sources */,
 				47BB647C20A4AD0D00242C1D /* SampleComponent.swift in Sources */,
