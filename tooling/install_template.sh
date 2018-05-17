@@ -18,13 +18,14 @@ create_module_templates()
 	SED="mv {} \$(echo {} | sed \"s/${PREFIX_NAME}/${TEMPLATE_PREFIX}/\")"
 	find "./${MODULE_NAME}.xctemplate/${TEMPLATE_CONFIGURATION}" -depth -name "*${PREFIX_NAME}*" -execdir sh -c "${SED}" \;
 
-	LIBRARY_PATH="${HOME}/Library/Developer/Xcode/Templates/"
-	MODULE_PATH="${LIBRARY_PATH}/${MODULE_NAME}.xctemplate"
+	LIBRARY_PATH="${HOME}/Library/Developer/Xcode/Templates/File Templates/Module"
+	MODULE_PATH="${LIBRARY_PATH}/"
 	
 	rm -rf "${MODULE_PATH}"
 	mkdir -p "${MODULE_PATH}"
-	cp -R "${MODULE_NAME}.xctemplate" "${LIBRARY_PATH}"
+	cp -R "${MODULE_NAME}.xctemplate" "${MODULE_PATH}"
 }
 
 create_module_templates "Module" "Default" "ViewLessModule_"
 create_module_templates "Module" "ownsView" "Module_"
+
