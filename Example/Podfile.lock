@@ -1,5 +1,5 @@
 PODS:
-  - ModuleArchitecture (0.11.0)
+  - ModuleArchitecture (0.13.0)
   - Nimble (7.0.3)
   - Quick (1.2.0)
 
@@ -13,7 +13,7 @@ EXTERNAL SOURCES:
     :path: ../
 
 SPEC CHECKSUMS:
-  ModuleArchitecture: 49b77eadbb01be7b1dded3f7b61e062ec51bf284
+  ModuleArchitecture: 99ec6e5dab9ca13417877c89cf6e161e66d55ed9
   Nimble: 7f5a9c447a33002645a071bddafbfb24ea70e0ac
   Quick: 58d203b1c5e27fff7229c4c1ae445ad7069a7a08
 
