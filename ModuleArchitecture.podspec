@@ -12,7 +12,9 @@ Pod::Spec.new do |s|
   s.source           = { :git => 'https://github.com/dchohfi/ios-module-architecture.git', :tag => s.version.to_s }
 
   s.ios.deployment_target = '8.0'
+  s.ios.source_files = 'ModuleArchitecture/Classes/**/*'
+  s.ios.exclude_files = 'ModuleArchitecture/Classes/Protocols/WatchCoordinator.swift'
   s.watchos.deployment_target = '2.0'
+  s.watchos.source_files = 'ModuleArchitecture/Classes/Protocols/WatchCoordinator.swift'
   s.swift_version = '4.1'
-  s.source_files = 'ModuleArchitecture/Classes/**/*'
 end
