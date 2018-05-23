@@ -1,5 +1,5 @@
 import ModuleArchitecture
 
 struct SampleConfiguration {
-    
+
 }

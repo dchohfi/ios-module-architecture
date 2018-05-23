@@ -1,7 +1,7 @@
 import ModuleArchitecture
 
 final class Module_Coordinator: Coordinator<Module_PresenterType>, Module_CoordinatorType {
-    
+
     let viewController: Module_ViewControllerType
 
     init(presenter: Module_PresenterType, viewController: Module_ViewControllerType) {
@@ -12,5 +12,5 @@ final class Module_Coordinator: Coordinator<Module_PresenterType>, Module_Coordi
 }
 
 extension Module_Coordinator: Module_PresenterDelegate {
-    
+
 }
