@@ -5,6 +5,11 @@ public protocol ViewControllerType: AnyObject {
     func asViewController() -> UIViewController
 }
 
+public protocol TabBarControllerType: ViewControllerType {
+
+    func asTabBarController() -> UITabBarController
+}
+
 public extension ViewControllerType where Self: UIViewController {
 
     func asViewController() -> UIViewController {
@@ -75,5 +80,24 @@ extension UIPageViewController: ViewControllerType {
                                 direction: direction,
                                 animated: animated,
                                 completion: completion)
+    }
+}
+
+extension TabBarControllerType where Self: UITabBarController {
+
+    public func asTabBarController() -> UITabBarController {
+
+        return self
+    }
+}
+
+extension TabBarControllerType where Self: UIViewController {
+
+    public func asTabBarController() -> UITabBarController {
+
+        let tabController = UITabBarController()
+        let viewControllers: [UIViewController] = [self]
+        tabController.setViewControllers(viewControllers, animated: false)
+        return tabController
     }
 }

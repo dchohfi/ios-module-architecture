@@ -40,21 +40,25 @@
 			<string>true</string>
 		</dict>
 		<dict>
-			<key>Identifier</key>
-			<string>ownsView</string>
-			<key>Required</key>
-			<string>true</string>
-			<key>Name</key>
-			<string>Adds View Controller</string>
-			<key>Description</key>
-			<string>Whether this Module owns a corresponding view</string>
-			<key>Type</key>
-			<string>checkbox</string>
-			<key>Default</key>
-			<string>true</string>
-			<key>NotPersisted</key>
-			<string>true</string>
-		</dict>
+      		<key>Identifier</key>
+		    <string>moduleType</string>
+		    <key>Required</key>
+		    <true/>
+		    <key>Name</key>
+		    <string>Module type:</string>
+		    <key>Description</key>
+		    <string>The type of the module</string>
+		    <key>Type</key>
+		    <string>popup</string>
+		    <key>Default</key>
+		    <string>Default</string>
+		    <key>Values</key>
+		    <array>
+		      <string>Default</string>
+		      <string>ownsView</string>
+		      <string>watchOS</string>
+		    </array>
+    </dict>
 	</array>
 </dict>
 </plist>

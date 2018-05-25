@@ -28,4 +28,4 @@ create_module_templates()
 
 create_module_templates "Module" "Default" "ViewLessModule_"
 create_module_templates "Module" "ownsView" "Module_"
-
+create_module_templates "Module" "watchOS" "WatchModule_"
