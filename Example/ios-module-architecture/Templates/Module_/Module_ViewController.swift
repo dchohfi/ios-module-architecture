@@ -8,7 +8,7 @@ protocol Module_ViewControllerDelegate: AnyObject {
 final class Module_ViewController: UIViewController, Module_ViewControllerType {
 
     weak var delegate: Module_ViewControllerDelegate?
-    private let component = Module_Component()
+    private lazy var component = Module_Component()
 
     override func loadView() {
 

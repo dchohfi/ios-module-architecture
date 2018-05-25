@@ -12,7 +12,7 @@ protocol ___VARIABLE_productName___CoordinatorType: CoordinatorType {
     var viewController: ___VARIABLE_productName___ViewControllerType { get }
 }
 
-protocol ___VARIABLE_productName___PresenterType: PresenterType, ___VARIABLE_productName___ViewControllerDelegate {
+protocol ___VARIABLE_productName___PresenterType: PresenterType {
 
     var delegate: ___VARIABLE_productName___PresenterDelegate? { get set }
 }
