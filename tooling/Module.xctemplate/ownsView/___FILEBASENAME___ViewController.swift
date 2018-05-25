@@ -8,7 +8,7 @@ protocol ___VARIABLE_productName___ViewControllerDelegate: AnyObject {
 final class ___VARIABLE_productName___ViewController: UIViewController, ___VARIABLE_productName___ViewControllerType {
 
     weak var delegate: ___VARIABLE_productName___ViewControllerDelegate?
-    private let component = ___VARIABLE_productName___Component()
+    private lazy var component = ___VARIABLE_productName___Component()
 
     override func loadView() {
 
