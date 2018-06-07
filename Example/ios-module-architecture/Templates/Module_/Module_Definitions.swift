@@ -12,7 +12,7 @@ protocol Module_CoordinatorType: CoordinatorType {
     var viewController: Module_ViewControllerType { get }
 }
 
-protocol Module_PresenterType: PresenterType, Module_ViewControllerDelegate {
+protocol Module_PresenterType: PresenterType {
 
     var delegate: Module_PresenterDelegate? { get set }
 }
