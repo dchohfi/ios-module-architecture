@@ -7,9 +7,8 @@ protocol Module_ModuleType: ModuleType {
     func createCoordinator() -> Module_CoordinatorType
 }
 
-protocol Module_CoordinatorType: CoordinatorType {
+protocol Module_CoordinatorType: ViewableCoordinatorType {
 
-    var viewController: Module_ViewControllerType { get }
 }
 
 protocol Module_PresenterType: PresenterType {
