@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'ModuleArchitecture'
-  s.version          = '0.14.1'
+  s.version          = '0.14.2'
   s.summary          = 'iOS Architecture'
   s.description      = <<-DESC
   Protocols that define a module based iOS Architecture
