@@ -7,9 +7,8 @@ protocol ___VARIABLE_productName___ModuleType: ModuleType {
     func createCoordinator() -> ___VARIABLE_productName___CoordinatorType
 }
 
-protocol ___VARIABLE_productName___CoordinatorType: CoordinatorType {
+protocol ___VARIABLE_productName___CoordinatorType: ViewableCoordinatorType {
 
-    var viewController: ___VARIABLE_productName___ViewControllerType { get }
 }
 
 protocol ___VARIABLE_productName___PresenterType: PresenterType {

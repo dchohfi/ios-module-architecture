@@ -26,13 +26,13 @@
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
 		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
 		857B90F90B9E22E9E4C6662E /* Pods_ios_module_architecture_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E48C40356DB8E4C9AE9C97A4 /* Pods_ios_module_architecture_Example.framework */; };
-		9852D98420B83D3600233BDD /* SampleConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9852D97D20B83D3600233BDD /* SampleConfiguration.swift */; };
-		9852D98520B83D3600233BDD /* SampleCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9852D97E20B83D3600233BDD /* SampleCoordinator.swift */; };
-		9852D98620B83D3600233BDD /* SampleModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9852D97F20B83D3600233BDD /* SampleModule.swift */; };
-		9852D98720B83D3600233BDD /* SamplePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9852D98020B83D3600233BDD /* SamplePresenter.swift */; };
-		9852D98820B83D3600233BDD /* SampleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9852D98120B83D3600233BDD /* SampleViewController.swift */; };
-		9852D98920B83D3600233BDD /* SampleComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9852D98220B83D3600233BDD /* SampleComponent.swift */; };
-		9852D98A20B83D3600233BDD /* SampleDefinitions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9852D98320B83D3600233BDD /* SampleDefinitions.swift */; };
+		98721E1A2114F82300D13394 /* SampleConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98721E132114F82300D13394 /* SampleConfiguration.swift */; };
+		98721E1B2114F82300D13394 /* SampleCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98721E142114F82300D13394 /* SampleCoordinator.swift */; };
+		98721E1C2114F82300D13394 /* SampleModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98721E152114F82300D13394 /* SampleModule.swift */; };
+		98721E1D2114F82300D13394 /* SamplePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98721E162114F82300D13394 /* SamplePresenter.swift */; };
+		98721E1E2114F82300D13394 /* SampleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98721E172114F82300D13394 /* SampleViewController.swift */; };
+		98721E1F2114F82300D13394 /* SampleComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98721E182114F82300D13394 /* SampleComponent.swift */; };
+		98721E202114F82300D13394 /* SampleDefinitions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98721E192114F82300D13394 /* SampleDefinitions.swift */; };
 		98C2B77320ACA5D100EF509A /* WatchModule_Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98C2B77220ACA5D100EF509A /* WatchModule_Coordinator.swift */; };
 		98FAB56D20AB5AFE0042386E /* WatchModule_InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98FAB56C20AB5AFE0042386E /* WatchModule_InterfaceController.swift */; };
 		98FAB56F20AB5B380042386E /* WatchModule_Presenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98FAB56E20AB5B380042386E /* WatchModule_Presenter.swift */; };
@@ -75,13 +75,13 @@
 		607FACE51AFB9204008FA782 /* ios-module-architecture_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ios-module-architecture_Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
-		9852D97D20B83D3600233BDD /* SampleConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleConfiguration.swift; sourceTree = "<group>"; };
-		9852D97E20B83D3600233BDD /* SampleCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleCoordinator.swift; sourceTree = "<group>"; };
-		9852D97F20B83D3600233BDD /* SampleModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleModule.swift; sourceTree = "<group>"; };
-		9852D98020B83D3600233BDD /* SamplePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SamplePresenter.swift; sourceTree = "<group>"; };
-		9852D98120B83D3600233BDD /* SampleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleViewController.swift; sourceTree = "<group>"; };
-		9852D98220B83D3600233BDD /* SampleComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleComponent.swift; sourceTree = "<group>"; };
-		9852D98320B83D3600233BDD /* SampleDefinitions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleDefinitions.swift; sourceTree = "<group>"; };
+		98721E132114F82300D13394 /* SampleConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleConfiguration.swift; sourceTree = "<group>"; };
+		98721E142114F82300D13394 /* SampleCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleCoordinator.swift; sourceTree = "<group>"; };
+		98721E152114F82300D13394 /* SampleModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleModule.swift; sourceTree = "<group>"; };
+		98721E162114F82300D13394 /* SamplePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SamplePresenter.swift; sourceTree = "<group>"; };
+		98721E172114F82300D13394 /* SampleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleViewController.swift; sourceTree = "<group>"; };
+		98721E182114F82300D13394 /* SampleComponent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleComponent.swift; sourceTree = "<group>"; };
+		98721E192114F82300D13394 /* SampleDefinitions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SampleDefinitions.swift; sourceTree = "<group>"; };
 		98C2B77220ACA5D100EF509A /* WatchModule_Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchModule_Coordinator.swift; sourceTree = "<group>"; };
 		98FAB56C20AB5AFE0042386E /* WatchModule_InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchModule_InterfaceController.swift; sourceTree = "<group>"; };
 		98FAB56E20AB5B380042386E /* WatchModule_Presenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WatchModule_Presenter.swift; sourceTree = "<group>"; };
@@ -221,13 +221,13 @@
 		631F57A7208656970029AA11 /* Sample */ = {
 			isa = PBXGroup;
 			children = (
-				9852D97D20B83D3600233BDD /* SampleConfiguration.swift */,
-				9852D97E20B83D3600233BDD /* SampleCoordinator.swift */,
-				9852D97F20B83D3600233BDD /* SampleModule.swift */,
-				9852D98020B83D3600233BDD /* SamplePresenter.swift */,
-				9852D98120B83D3600233BDD /* SampleViewController.swift */,
-				9852D98220B83D3600233BDD /* SampleComponent.swift */,
-				9852D98320B83D3600233BDD /* SampleDefinitions.swift */,
+				98721E132114F82300D13394 /* SampleConfiguration.swift */,
+				98721E142114F82300D13394 /* SampleCoordinator.swift */,
+				98721E152114F82300D13394 /* SampleModule.swift */,
+				98721E162114F82300D13394 /* SamplePresenter.swift */,
+				98721E172114F82300D13394 /* SampleViewController.swift */,
+				98721E182114F82300D13394 /* SampleComponent.swift */,
+				98721E192114F82300D13394 /* SampleDefinitions.swift */,
 			);
 			path = Sample;
 			sourceTree = "<group>";
@@ -481,23 +481,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9852D98820B83D3600233BDD /* SampleViewController.swift in Sources */,
-				9852D98920B83D3600233BDD /* SampleComponent.swift in Sources */,
+				98721E1E2114F82300D13394 /* SampleViewController.swift in Sources */,
+				98721E1F2114F82300D13394 /* SampleComponent.swift in Sources */,
 				205642962062CF9600ACE96E /* Module_Component.swift in Sources */,
-				9852D98620B83D3600233BDD /* SampleModule.swift in Sources */,
+				98721E1C2114F82300D13394 /* SampleModule.swift in Sources */,
 				98FAB56F20AB5B380042386E /* WatchModule_Presenter.swift in Sources */,
 				98FAB56D20AB5AFE0042386E /* WatchModule_InterfaceController.swift in Sources */,
 				205642912062CF9600ACE96E /* Module_Module.swift in Sources */,
 				2056428C2062CF9600ACE96E /* ViewLessModule_Presenter.swift in Sources */,
 				205642952062CF9600ACE96E /* Module_Presenter.swift in Sources */,
-				9852D98420B83D3600233BDD /* SampleConfiguration.swift in Sources */,
-				9852D98720B83D3600233BDD /* SamplePresenter.swift in Sources */,
+				98721E1A2114F82300D13394 /* SampleConfiguration.swift in Sources */,
+				98721E1D2114F82300D13394 /* SamplePresenter.swift in Sources */,
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
 				2056428E2062CF9600ACE96E /* ViewLessModule_Coordinator.swift in Sources */,
 				205642922062CF9600ACE96E /* Module_Coordinator.swift in Sources */,
 				2056428F2062CF9600ACE96E /* ViewLessModule_Module.swift in Sources */,
-				9852D98520B83D3600233BDD /* SampleCoordinator.swift in Sources */,
-				9852D98A20B83D3600233BDD /* SampleDefinitions.swift in Sources */,
+				98721E1B2114F82300D13394 /* SampleCoordinator.swift in Sources */,
+				98721E202114F82300D13394 /* SampleDefinitions.swift in Sources */,
 				98FAB57320AB5B650042386E /* WatchModule_Definitions.swift in Sources */,
 				98FAB57120AB5B550042386E /* WatchModule_Configuration.swift in Sources */,
 				205642942062CF9600ACE96E /* Module_Definitions.swift in Sources */,
