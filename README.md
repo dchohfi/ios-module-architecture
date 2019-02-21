@@ -15,7 +15,7 @@ The tooling folder defines some templates helpful when creating new modules.
 To make the templates available to Xcode, run the following command:
 
 ```
-cp -r tooling/Module.xctemplate ~/Library/Developer/Xcode/Templates/
+cd tooling && ./install_template.sh
 ```
 ## Authors
 

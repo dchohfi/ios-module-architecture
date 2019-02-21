@@ -5,6 +5,11 @@ public protocol CoordinatorType: AnyObject {
     func detach(_ child: CoordinatorType)
 }
 
+public protocol ViewableCoordinatorType: CoordinatorType {
+    
+    var viewController: ViewControllerType { get }
+}
+
 public protocol ReusableCoordinatorType: CoordinatorType {
 
     func prepareForReuse()
