@@ -1,5 +1,5 @@
 use_frameworks!
-platform :ios, '8.0'
+platform :ios, '10.0'
 
 target 'ios-module-architecture_Example' do
   pod 'ModuleArchitecture', :path => '../'
@@ -7,7 +7,7 @@ target 'ios-module-architecture_Example' do
   target 'ios-module-architecture_Tests' do
     inherit! :search_paths
 
-    pod 'Quick', '~> 1.2.0'
-    pod 'Nimble', '~> 7.0.2'
+    pod 'Quick', '~> 1.2'
+    pod 'Nimble', '~> 7.0'
   end
 end

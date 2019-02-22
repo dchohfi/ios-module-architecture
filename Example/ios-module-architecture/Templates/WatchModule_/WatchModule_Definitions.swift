@@ -8,6 +8,6 @@ protocol WatchModule_View: AnyObject {
     func render(configuration: WatchModule_Configuration)
 }
 
-protocol WatchModule_CoordinatorType: WatchCoordinatorType {
+protocol WatchModule_CoordinatorType: AnyObject {
 
 }
