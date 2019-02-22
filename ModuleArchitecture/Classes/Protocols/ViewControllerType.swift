@@ -72,7 +72,7 @@ extension UITabBarController: ViewControllerType {
 extension UIPageViewController: ViewControllerType {
 
     public func setViewControllers(_ viewControllersType: [ViewControllerType]?,
-                                   direction: UIPageViewControllerNavigationDirection,
+                                   direction: UIPageViewController.NavigationDirection,
                                    animated: Bool,
                                    completion: ((Bool) -> Swift.Void)? = nil) {
 
