@@ -1,12 +1,12 @@
 PODS:
-  - ModuleArchitecture (0.15.0)
-  - Nimble (7.3.4)
-  - Quick (1.3.4)
+  - ModuleArchitecture (0.16.0)
+  - Nimble (8.0.2)
+  - Quick (2.1.0)
 
 DEPENDENCIES:
   - ModuleArchitecture (from `../`)
-  - Nimble (~> 7.0)
-  - Quick (~> 1.2)
+  - Nimble (~> 8.0)
+  - Quick (~> 2.0)
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
@@ -18,10 +18,10 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  ModuleArchitecture: 285b6ddd6444d904870df2a46739b9b67c808fd1
-  Nimble: 051e3d8912d40138fa5591c78594f95fb172af37
-  Quick: f4f7f063c524394c73ed93ac70983c609805d481
+  ModuleArchitecture: 4f837ffd141f0088e738d1f18c243b812e21693f
+  Nimble: 622629381bda1dd5678162f21f1368cec7cbba60
+  Quick: 4be43f6634acfa727dd106bdf3929ce125ffa79d
 
-PODFILE CHECKSUM: 7d0dc07add0fc573f7b9be23e19514ad4dc10998
+PODFILE CHECKSUM: e39515ecfbc10f05f5d49618ccf8c867f6caa134
 
 COCOAPODS: 1.6.1
