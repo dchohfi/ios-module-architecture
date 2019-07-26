@@ -42,7 +42,7 @@ open class Coordinator<Presentable>: CoordinatorType {
 
     public func detach(_ child: CoordinatorType) {
 
-        guard let index = self.children.index(where: { $0 === child }) else { return }
+        guard let index = self.children.firstIndex(where: { $0 === child }) else { return }
         self.children.remove(at: index)
     }
 }

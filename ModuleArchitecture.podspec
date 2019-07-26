@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'ModuleArchitecture'
-  s.version          = '0.15.0'
+  s.version          = '0.16.0'
   s.summary          = 'iOS Architecture'
   s.description      = <<-DESC
   Protocols that define a module based iOS Architecture
@@ -16,5 +16,5 @@ Pod::Spec.new do |s|
   s.ios.exclude_files = 'ModuleArchitecture/Classes/Protocols/WatchCoordinator.swift'
   s.watchos.deployment_target = '2.0'
   s.watchos.source_files = 'ModuleArchitecture/Classes/Protocols/WatchCoordinator.swift'
-  s.swift_version = '4.2'
+  s.swift_version = '5.0'
 end
